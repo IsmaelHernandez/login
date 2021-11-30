@@ -25,7 +25,7 @@
 <!--Coded with love by Mutiullah Samim-->
 <body>
       <div class="d-flex justify-content-center form_container">
-         <form action="mostrar.php">
+         <form action="mostrar.php" method="POST">
             <b>Nit:</b>
             <div class = "form-group">
                <input type="text" name="nit" class="form-control"  placeholder="Nit">
@@ -40,8 +40,9 @@
             </div>
             <br>
             <div class="d-flex justify-content-center mt-3 login_container">
-				 	<button type="submit" name="button" class="btn login_btn">Buscar</button>
+				 	<button type="button" class="btn login_btn" onclick="Buscar();">Buscar</button>
 				   </div>
+               <div class="resultado"></div>
                <br>
             <div class="text-center">
                <!-- enlace para salir-->
@@ -51,5 +52,6 @@
       </div>
       </body>
 </html>
-        
+
+<script type="text/javascript" language="javascript" src="mostrar.js"></script>
         
