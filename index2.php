@@ -23,18 +23,18 @@
 <!--Coded with love by Mutiullah Samim-->
 <body>
       <div class="d-flex justify-content-center form_container">
-         <form action="mostrar.php" method="POST">
+         <form action="mostrar.php" method="GET">
             <b>Nit:</b>
             <div class = "form-group">
-               <input type="text" name="nit" class="form-control"  placeholder="Nit">
+               <input type="text" id="nit" class="form-control"  placeholder="Nit">
             </div>
             <b>Prefijo:</b>
             <div class = "form-group">
-               <input type="text" name="prefix" class="form-control"  placeholder="Prefijo">
+               <input type="text" id="prefijo" class="form-control"  placeholder="Prefijo">
             </div>
             <b>Folio:</b>
             <div class = "form-group">
-               <input type="text" name="folio" class="form-control"  placeholder="Folio">
+               <input type="text" id="folio" class="form-control"  placeholder="Folio">
             </div>
             <br>
             <div class="d-flex justify-content-center mt-3 login_container">

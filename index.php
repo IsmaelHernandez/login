@@ -60,3 +60,5 @@
 	</div>
 </body>
 </html>
+
+<script type="text/javascript" language="javascript" src="mostrar.js"></script>
