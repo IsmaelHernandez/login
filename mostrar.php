@@ -16,11 +16,13 @@
    var_dump($filas);
    
   if($filas > 0){
+     echo '<table class="table table-hover table-striped table-bordered table-condensed"><thead class="thead-dark"><th>NIT</th><th class="text-center">Prefijo</th><th>Folio</th></thead>';
+     
       while($fila=mysqli_fetch_assoc($resultado)){
-         echo $fila["nit"];
-         echo $fila["code_response"];
-         echo $fila["folio"];
+      echo '<tbody style="text-align: center;"><tr><td>'.$fila["nit"].'</td>
+         <td>'.$fila["prefix"].'</td><td>'.$fila["folio"].'</td></tr></tbody>';
       }
+    echo '</table>';
   }
   else{
       echo "No se encontro usuario";

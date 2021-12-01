@@ -42,7 +42,8 @@
             <div class="d-flex justify-content-center mt-3 login_container">
 				 	<button type="button" class="btn login_btn" onclick="Buscar();">Buscar</button>
 				   </div>
-               <div class="resultado"></div>
+               <br>
+               <div id="tabla_user_traza"></div>
                <br>
             <div class="text-center">
                <!-- enlace para salir-->

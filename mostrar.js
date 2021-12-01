@@ -5,12 +5,12 @@ function Buscar() {
  var prefijo =$('#prefix').val();
 
  $.ajax({
-    url: 'php/mostrar.php',
+    url: 'mostrar.php',
     type: 'POST', 
     data: {'prefijo':prefijo,'folio':folio, 'nit':nit },
  }).done(function(mostrar) { 
-     
-        $("#resultado").append(mostrar);
+    
+    $('#tabla_user_traza').html(mostrar);
                 
     })
     
